@@ -3,7 +3,7 @@ class Pokemon
   
   def initialize(data)
     @id = data[id]
-    @name = data.name
+    @name = data[name]
     @type = data.type
   end
   
