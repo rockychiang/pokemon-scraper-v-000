@@ -2,7 +2,6 @@ class Pokemon
   attr_accessor :id, :name, :type, :db
   
   def initialize(pokemon)
-    binding.pry
     @id = pokemon[:id]
     @name = pokemon[:name]
     @type = pokemon[:type]
@@ -14,6 +13,7 @@ class Pokemon
   end
   
   def self.find(id_no, db)
+    binding.pry
     Pokemon.new(db.execute("SELECT * FROM pokemon WHERE id = ?", id_no))
   end
 end
