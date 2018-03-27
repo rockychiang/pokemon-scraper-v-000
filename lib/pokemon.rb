@@ -4,7 +4,7 @@ class Pokemon
   def initialize(data)
     @id = data[id]
     @name = data[name]
-    @type = data.type
+    @type = data[type]
   end
   
   def self.save(name, type, db)
