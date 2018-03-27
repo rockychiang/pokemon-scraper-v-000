@@ -3,9 +3,9 @@ class Pokemon
   
   def initialize(data)
     binding.pry
-    @id = data[0]
-    @name = data[1]
-    @type = data[2]
+    @id = data.id
+    @name = data.name
+    @type = data.type
   end
   
   def self.save(name, type, db)
